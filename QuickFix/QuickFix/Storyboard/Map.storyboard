@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2bG-d5-ZPp">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QuickNav-->
+        <scene sceneID="lBx-Fn-60g">
+            <objects>
+                <viewController id="2bG-d5-ZPp" customClass="MapViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k6S-id-ZzZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="5t4-C1-Nq1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Gra-XU-hYY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PeU-6b-gQy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="104"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driving instructions will go here" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAN-bQ-1bj">
+                                        <rect key="frame" x="8" y="8" width="359" height="88"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="jAN-bQ-1bj" firstAttribute="trailing" secondItem="PeU-6b-gQy" secondAttribute="trailingMargin" id="JGK-Ub-W45"/>
+                                    <constraint firstItem="jAN-bQ-1bj" firstAttribute="top" secondItem="PeU-6b-gQy" secondAttribute="topMargin" id="b6y-6b-tHi"/>
+                                    <constraint firstItem="jAN-bQ-1bj" firstAttribute="leading" secondItem="PeU-6b-gQy" secondAttribute="leadingMargin" id="bRZ-kF-Ax4"/>
+                                    <constraint firstItem="jAN-bQ-1bj" firstAttribute="bottom" secondItem="PeU-6b-gQy" secondAttribute="bottomMargin" id="kME-rL-d1U"/>
+                                </constraints>
+                            </view>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Discover Nearby Tech Shops" translatesAutoresizingMaskIntoConstraints="NO" id="VKq-fw-ybk">
+                                <rect key="frame" x="0.0" y="104" width="375" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="J8b-eI-iZk"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits" textContentType="location"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2bG-d5-ZPp" id="67e-5b-ZX9"/>
+                                </connections>
+                            </searchBar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" showsTraffic="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C6L-Gq-aXI">
+                                <rect key="frame" x="0.0" y="160" width="375" height="458"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="458" id="KxP-CH-RPi"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="2bG-d5-ZPp" id="vjU-x1-acI"/>
+                                </connections>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hBN-tj-Dfg">
+                                <rect key="frame" x="57" y="554" width="261" height="32"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                    <segment title="Hybrid"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlActionWithSender:" destination="2bG-d5-ZPp" eventType="valueChanged" id="fon-9p-ezF"/>
+                                </connections>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJO-Sx-ZUM">
+                                <rect key="frame" x="16" y="160" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zqo-hL-7lS"/>
+                                </constraints>
+                                <state key="normal" image="trash" catalog="system"/>
+                                <connections>
+                                    <action selector="RemoveOverlay:" destination="2bG-d5-ZPp" eventType="touchUpInside" id="atD-nD-2lW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJO-Sx-ZUM" firstAttribute="leading" secondItem="Gra-XU-hYY" secondAttribute="leadingMargin" id="4br-Pl-E8y"/>
+                            <constraint firstItem="PeU-6b-gQy" firstAttribute="leading" secondItem="VKq-fw-ybk" secondAttribute="leading" id="4fu-pz-5k6"/>
+                            <constraint firstItem="VKq-fw-ybk" firstAttribute="trailing" secondItem="C6L-Gq-aXI" secondAttribute="trailing" id="8Cj-4a-AhL"/>
+                            <constraint firstItem="C6L-Gq-aXI" firstAttribute="bottom" secondItem="YY5-nd-Uv3" secondAttribute="bottom" id="9R7-eR-pXy"/>
+                            <constraint firstItem="PeU-6b-gQy" firstAttribute="trailing" secondItem="VKq-fw-ybk" secondAttribute="trailing" id="GSI-uV-XaR"/>
+                            <constraint firstItem="hBN-tj-Dfg" firstAttribute="leading" secondItem="YY5-nd-Uv3" secondAttribute="leading" constant="57" id="JdJ-SI-WXF"/>
+                            <constraint firstItem="5t4-C1-Nq1" firstAttribute="top" secondItem="hBN-tj-Dfg" secondAttribute="bottom" constant="33" id="MvK-HO-2Kx"/>
+                            <constraint firstItem="YY5-nd-Uv3" firstAttribute="trailing" secondItem="IJO-Sx-ZUM" secondAttribute="trailing" constant="309" id="O5Q-me-u6j"/>
+                            <constraint firstItem="C6L-Gq-aXI" firstAttribute="top" secondItem="VKq-fw-ybk" secondAttribute="bottom" id="PPz-ce-FWQ"/>
+                            <constraint firstItem="PeU-6b-gQy" firstAttribute="centerX" secondItem="Gra-XU-hYY" secondAttribute="centerX" id="QhO-Q0-sXX"/>
+                            <constraint firstItem="VKq-fw-ybk" firstAttribute="top" secondItem="PeU-6b-gQy" secondAttribute="bottom" id="VdJ-GF-U1I"/>
+                            <constraint firstItem="PeU-6b-gQy" firstAttribute="leading" secondItem="YY5-nd-Uv3" secondAttribute="leading" id="cHk-HS-dv8"/>
+                            <constraint firstItem="PeU-6b-gQy" firstAttribute="top" secondItem="YY5-nd-Uv3" secondAttribute="top" id="cHx-JI-RvP"/>
+                            <constraint firstItem="IJO-Sx-ZUM" firstAttribute="top" secondItem="C6L-Gq-aXI" secondAttribute="top" id="kpL-NC-w5c"/>
+                            <constraint firstItem="VKq-fw-ybk" firstAttribute="leading" secondItem="C6L-Gq-aXI" secondAttribute="leading" id="mPa-uP-eTx"/>
+                            <constraint firstItem="C6L-Gq-aXI" firstAttribute="centerX" secondItem="hBN-tj-Dfg" secondAttribute="centerX" id="nmn-0X-cRM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YY5-nd-Uv3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="QuickNav" image="globe" catalog="system" landscapeImage="globe" selectedImage="globe" id="PIH-dF-iVY"/>
+                    <navigationItem key="navigationItem" id="OSX-Ot-GrG"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="directionsLabel" destination="jAN-bQ-1bj" id="oEe-9e-1yy"/>
+                        <outlet property="map" destination="C6L-Gq-aXI" id="BcV-HU-ZXF"/>
+                        <outlet property="mapView" destination="C6L-Gq-aXI" id="6mK-df-N5j"/>
+                        <outlet property="searchBar" destination="VKq-fw-ybk" id="lKP-oS-U7D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z9H-Pt-cAB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1508" y="-1307.4962518740631"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="globe" catalog="system" width="64" height="60"/>
+        <image name="trash" catalog="system" width="60" height="64"/>
+    </resources>
+</document>

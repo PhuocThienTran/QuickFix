@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wep-1W-Tqk">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help & Support-->
+        <scene sceneID="co0-NG-skh">
+            <objects>
+                <viewController id="Wep-1W-Tqk" customClass="ContactUsViewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Asz-nm-UtM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Our Story" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kk-nU-dit">
+                                <rect key="frame" x="16" y="26" width="343" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Nq2-Gx-eLs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RCd-A3-wDI">
+                                <rect key="frame" x="16" y="76" width="343" height="515"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRe-De-e7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="425"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <string key="text">Our story takes place on one Australian summer afternoon. I, as Quick Apps's founder realises that there are usually too many apps on an iPhone, which can takes up too much storage space and hinder productivity. I then decided to create apps that you require and actually need on a daily basis, which this value is what sets the difference between us and other similar developers, where our first app Quick Apps's Net - or commonly known as QuickNet, is the best example of what we believe in. With that in mind, we still have a lot of projects in storage and unreleased, which we hope you will enjoy and utilise them in your daily routines. If you have an inquiry about any products, apps, projects, or anything in particular, do send us an Email inquiry via the link below. Make sure your Email is connected to the Email app to be able to launch the mail composing window. However, if Emailing us is not the best method for you, you can find our platforms through our website below. From all of us at Quick Apps. Thank You for using our services, we hope you have a great day.</string>
+                                        <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YT9-uE-02Z">
+                                        <rect key="frame" x="0.0" y="425" width="343" height="40"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                        <state key="normal" title="Quick Apps's Website">
+                                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5GO-S0-R6e" kind="show" id="gWF-Yg-ETw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Je9-P4-nYq">
+                                        <rect key="frame" x="0.0" y="465" width="343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="V6V-nF-Z5G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="25"/>
+                                        <state key="normal" title="Write To Quick Apps"/>
+                                        <connections>
+                                            <action selector="emailButtonTapped:" destination="Wep-1W-Tqk" eventType="touchUpInside" id="dDz-Q2-NGE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4Kk-nU-dit" firstAttribute="top" secondItem="DXm-hR-n4c" secondAttribute="top" constant="26" id="099-b6-nvQ"/>
+                            <constraint firstItem="4Kk-nU-dit" firstAttribute="trailing" secondItem="Asz-nm-UtM" secondAttribute="trailingMargin" id="8CK-lw-iWK"/>
+                            <constraint firstItem="4Kk-nU-dit" firstAttribute="leading" secondItem="Asz-nm-UtM" secondAttribute="leadingMargin" id="9P3-J2-C8x"/>
+                            <constraint firstItem="RCd-A3-wDI" firstAttribute="centerX" secondItem="Asz-nm-UtM" secondAttribute="centerX" id="EsS-16-iiZ"/>
+                            <constraint firstItem="RCd-A3-wDI" firstAttribute="leading" secondItem="4Kk-nU-dit" secondAttribute="leading" id="GP1-qs-elz"/>
+                            <constraint firstItem="RCd-A3-wDI" firstAttribute="centerY" secondItem="Asz-nm-UtM" secondAttribute="centerY" id="ODf-On-X5q"/>
+                            <constraint firstItem="RCd-A3-wDI" firstAttribute="top" secondItem="4Kk-nU-dit" secondAttribute="bottom" id="n0z-fk-XhB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DXm-hR-n4c"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Help &amp; Support" image="questionmark" catalog="system" landscapeImage="questionmark" selectedImage="questionmark" id="8fh-r0-tRk"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yld-ay-DQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39.200000000000003" y="57.121439280359823"/>
+        </scene>
+        <!--WebPage-->
+        <scene sceneID="jnd-rB-TGb">
+            <objects>
+                <viewController title="WebPage" id="5GO-S0-R6e" customClass="OnlineSupportiewController" customModule="QuickFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bt-E4-eWR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" allowsBackForwardNavigationGestures="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3m3-3K-Yce">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="555"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES">
+                                    <dataDetectorTypes key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES" trackingNumber="YES" flightNumber="YES" lookupSuggestion="YES"/>
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences" javaScriptCanOpenWindowsAutomatically="YES"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tVq-bf-eJo">
+                                <rect key="frame" x="0.0" y="599" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="T0e-Id-Mh9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="Enjoying QuickFix? Support us on the App Store."/>
+                                <connections>
+                                    <action selector="requestReviewManually" destination="5GO-S0-R6e" eventType="touchUpInside" id="AcC-MN-u4q"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KH6-ah-cii">
+                                <rect key="frame" x="0.0" y="555" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem systemItem="rewind" id="24n-Lx-LKW">
+                                        <connections>
+                                            <action selector="back:" destination="5GO-S0-R6e" id="Thb-XC-9qP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="3A4-rj-t0g"/>
+                                    <barButtonItem image="house" catalog="system" landscapeImage="house" id="Kih-VG-dcd">
+                                        <connections>
+                                            <action selector="HomeBtn:" destination="5GO-S0-R6e" id="lFf-30-0eL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="frv-uL-VfY"/>
+                                    <barButtonItem systemItem="fastForward" id="yTb-7q-GUl">
+                                        <connections>
+                                            <action selector="forward:" destination="5GO-S0-R6e" id="Ivp-20-dYa"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3m3-3K-Yce" firstAttribute="top" secondItem="ie8-QE-nAK" secondAttribute="top" id="90X-Dx-j2K"/>
+                            <constraint firstItem="tVq-bf-eJo" firstAttribute="top" secondItem="KH6-ah-cii" secondAttribute="bottom" id="HEc-9k-RWV"/>
+                            <constraint firstItem="KH6-ah-cii" firstAttribute="top" secondItem="3m3-3K-Yce" secondAttribute="bottom" id="HYl-WD-AzI"/>
+                            <constraint firstItem="3m3-3K-Yce" firstAttribute="leading" secondItem="ie8-QE-nAK" secondAttribute="leading" id="Hvp-zX-WUY"/>
+                            <constraint firstItem="3m3-3K-Yce" firstAttribute="trailing" secondItem="KH6-ah-cii" secondAttribute="trailing" id="J37-XY-JEd"/>
+                            <constraint firstItem="KH6-ah-cii" firstAttribute="leading" secondItem="tVq-bf-eJo" secondAttribute="leading" id="Zr4-FN-IBT"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="tVq-bf-eJo" secondAttribute="bottom" constant="-2" id="hB4-EC-Fex"/>
+                            <constraint firstItem="3m3-3K-Yce" firstAttribute="centerX" secondItem="8bt-E4-eWR" secondAttribute="centerX" id="rud-Hz-RqT"/>
+                            <constraint firstItem="KH6-ah-cii" firstAttribute="trailing" secondItem="tVq-bf-eJo" secondAttribute="trailing" id="wIQ-He-zEf"/>
+                            <constraint firstItem="3m3-3K-Yce" firstAttribute="leading" secondItem="KH6-ah-cii" secondAttribute="leading" id="zGc-Bc-Qa0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ie8-QE-nAK"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Bkw-LN-93b"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="webView" destination="3m3-3K-Yce" id="xhr-Sd-VAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vlc-B6-hFk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="752.79999999999995" y="-372.86356821589209"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="house" catalog="system" width="64" height="54"/>
+        <image name="questionmark" catalog="system" width="48" height="64"/>
+    </resources>
+</document>

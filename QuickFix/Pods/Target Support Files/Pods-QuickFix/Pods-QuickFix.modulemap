@@ -1,0 +1,6 @@
+framework module Pods_QuickFix {
+  umbrella header "Pods-QuickFix-umbrella.h"
+
+  export *
+  module * { export * }
+}
