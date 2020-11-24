@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/PhuocThienTran/QuickFix/blob/main/QuickFix/QuickFix/Assets.xcassets/AppIcon.appiconset/167.png>
+  <img src="https://github.com/PhuocThienTran/QuickFix/blob/main/QuickFix/QuickFix/Assets.xcassets/AppIcon.appiconset/167.png
 </p>
 
 # QuickFix-2.5
