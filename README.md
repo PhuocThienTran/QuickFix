@@ -1,4 +1,7 @@
-![QuickFix Logo](https://github.com/PhuocThienTran/QuickFix/blob/main/QuickFix/QuickFix/Assets.xcassets/AppIcon.appiconset/167.png)
+<p align="center">
+  <img src="https://github.com/PhuocThienTran/QuickFix/blob/main/QuickFix/QuickFix/Assets.xcassets/AppIcon.appiconset/167.png>
+</p>
+
 # QuickFix-2.5
 QuickFix is an app designed for maximizing social interaction while benefiting your knowledge of common errors and solutions in the biggest technology systems - Apple and Microsoft. Using QuickFix, you will have access to a list of common chosen platform's errors and solutions, a direct internet connection to the official online customer help service provided by the technology's company, and a map should you choose to bring your physical device to a nearby or your trusted place to get fixed.
 
